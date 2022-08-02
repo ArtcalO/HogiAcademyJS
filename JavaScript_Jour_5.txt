@@ -60,3 +60,142 @@ La boucle while peut être considérée comme une instruction if répétitive
 		    instructions..
 		}
 		while (condition);
+
+4. LA BOUCLE INFINIE : L’une des erreurs les plus courantes lors de la mise en œuvre de tout type de boucle est qu’il peut ne jamais sortir, c’est-à-dire que la boucle s’exécute pendant des temps infinis. Cela se produit lorsque la condition échoue pour une raison quelconque. 
+	Exemples:
+
+		<script type = "text/javaScript">
+
+			// illustration d'une boucle infinie
+			for (var i = 5; i != 0; i -= 2)
+			{
+				document.write(i);
+			}
+			
+			var x = 5;
+
+			// boucle infinie car l’instruction de modification n’est pas fournie
+			while (x == 5)
+			{
+				document.write("In the loop");
+			}
+
+		</script>
+
+
+LES OBJECTS EN JAVASCRIPTS
+
+Un objet en JavaScript est un type de données composé d'une collection de noms ou clés et valeurs , représenté dans les paires NOM:VALEUR. Les paires nom:valeur peuvent être constituées de propriétés pouvant contenir n'importe quel type de données, y compris des chaînes, des nombres et des booléens, ainsi que des méthodes, qui sont des fonctions contenues dans un objet.
+
+Dans la vraie vie, une voiture est un objet .
+
+Une voiture a des propriétés comme le poids et la couleur, et des méthodes comme le démarrage et l'arrêt :
+
+	IMAGE
+
+Toutes les voitures ont les mêmes propriétés , mais les valeurs des propriétés diffèrent d'une voiture à l'autre.
+
+Toutes les voitures ont les mêmes méthodes , mais les méthodes sont exécutées à des moments différents 
+
+OBJETS JAVASCRIPT
+Vous avez déjà appris que les variables JavaScript sont des conteneurs pour les valeurs de données.
+
+Ce code attribue une valeur simple (Fiat) à une variable nommée car :
+	let car = [];
+
+Les objets sont aussi des variables. Mais les objets peuvent contenir de nombreuses valeurs.
+Ce code attribue plusieurs valeurs (Fiat, 500, blanc) à une variable nommée car :
+
+	const car = {type:"Fiat", model:"500", color:"white"};
+
+Les valeurs sont écrites sous forme de paires NOM:VALEUR (nom et valeur séparés par deux points).
+
+
+DÉFINITION D'OBJET
+
+Vous définissez (et créez) un objet JavaScript avec un littéral d'objet :
+	const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+Les espaces et les sauts de ligne ne sont pas importants. Une définition d'objet peut s'étendre sur plusieurs lignes :
+	Exemple : 
+		const person = {
+		  firstName: "John",
+		  lastName: "Doe",
+		  age: 50,
+		  eyeColor: "blue"
+		};
+	Excercice : Creer un objet qui s'appelle CNI et ajoutez les information qui se trouvent sur votre CNI
+
+ACCÉDER AUX PROPRIÉTÉS DE L'OBJET
+Vous pouvez accéder aux propriétés d'un objet de deux manières :
+	 
+	 *  : objectName.propertyName
+	 ** : objectName["propertyName"]
+
+	 Excercice : Recupere le prenom de votre object CNI et la date de naissance
+
+
+MÉTHODES D'OBJET
+
+Les objets peuvent aussi avoir des méthodes .
+
+Les méthodes sont des actions qui peuvent être effectuées sur des objets.
+
+Les méthodes sont stockées dans les propriétés en tant que définitions de fonction .
+
+	Exemple : const person = {
+			  firstName: "John",
+			  lastName : "Doe",
+			  id       : 5566,
+			  fullName : function() {
+			    return this.firstName + " " + this.lastName;
+			  }
+			};
+
+			Dans l'exemple ci-dessus, this fait référence à l' objet person .
+
+			IE this.firstName signifie la propriété firstName de this .
+
+			IE this.firstName signifie la propriété firstName de person .
+
+
+ACCÉDER AUX MÉTHODES D'OBJET
+Vous accédez à une méthode objet avec la syntaxe suivante :
+
+		objectName.methodName()
+
+
+Exercice : creer une methoe pour votre objet CNI qui retourne votre nom complet
+
+
+FOR ... IN
+
+L'instruction JavaScript for...in parcourt les propriétés(clef) d'un objet :
+	syntaxe :
+		for (clef in objet) {
+		  // code block to be executed
+		}
+
+	Exemple : 
+		const person = {fname:"John", lname:"Doe", age:25};
+		let text = "";
+		for (let x in person) {
+		  text += person[x];
+		}
+
+FOR ... OF
+
+L'instruction JavaScript for...of parcourt les valeurs d'un objet itérable.
+	
+	syntaxe : 
+		for (variable of iterable) {
+		  // code block to be executed
+		}
+
+	Exemple : 
+		const cars = ["BMW", "Volvo", "Mini"];
+
+		let text = "";
+		for (let x of cars) {
+		  text += x;
+		}
