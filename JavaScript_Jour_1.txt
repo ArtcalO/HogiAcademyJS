@@ -1,0 +1,91 @@
+JavaScript n'iki ?
+	
+	=> Language de programmation ituma ama pages web aba interactive, mugabo irakoreshwa no mubindi vyinshi
+
+Ni hehe woyandikira ?
+	
+	=> Uburyo 3:
+		- Muri navigateur ukoresheje console tab
+		- Ukoresheje node js
+		- Urinze gu crea ama pages web
+			* Uyanditse inani muri page web
+			* Uyanditse muri fichier ukwayo hama ugaca uy'importa
+
+ets get started
+
+https://www.programiz.com/javascript/
+https://www.w3schools.com/js/
+
+console.log("Hello World")
+alert("Hello World")
+
+
+1)Ajouter du texte a l'interieur d'un element HTML
+
+	syntax		:	document.getElementById(id).innerHTML = 'votre texte'
+
+	example		:	<p id="demo"></p>
+					<script>
+					document.getElementById("demo").innerHTML = "Hello World!";
+					</script>
+
+	exercice	:	Utilisez la méthode getElementById pour rechercher  l’élément <p>  qui a pour id "HOGI" et remplacez son texte par « Hello Hogi»
+
+
+
+
+2) Changer la valeur d'un attribut
+
+	syntax		:	document.getElementById(id).attribute = new value
+
+	example		: 	<img id="myImage" src="smiley.gif">
+					<script>
+					document.getElementById("myImage").src = "landscape.jpg";
+					</script>
+
+	excercice	:	Use HTML DOM to change the value of the image's src attribute.
+
+
+
+
+
+3) Changer le syle d'un element HTML
+	
+	syntax		:	document.getElementById(id).style.property = new style
+
+	example		: 	<p id="p2">Hello World!</p>
+
+					<script>
+					document.getElementById("p2").style.color = "blue";
+					</script>
+
+	excercice	:	Changer la couleur de fond de hello hogi en bleu
+
+4) Reagir au evenements
+
+	syntax		:	onclick=JavaScript
+
+	example		: 	<h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+
+
+
+
+5) Reagir au evenements en utilisant les fonctions
+
+	syntax		:	onclick=function(params)
+
+	example		: 	<h1 onclick="changeText(this)">Click on this text!</h1>
+
+					<script>
+					function changeText(id) {
+					  id.innerHTML = "Ooops!";
+					}
+					</script>
+
+	excercice	:	Assign an onclick event to a button element:
+					<button onclick="displayDate()">Try it</button>
+
+
+TP
+ 1=> Faire le design avec style exact de cette calculatrice
+ 2=> Afficher le texte de chaque boutton quand on le clique dessus dans la case blanche
