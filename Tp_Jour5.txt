@@ -1,0 +1,3 @@
+1. La difference entre do while et while do
+2 Avec l'object CNI cree en cours, utiliser la boucle FOR ... IN pour afficher toute les valeurs de l'obejt CNI
+3. Donnez la difference entre FOR..IN et FOR...OF avec des exemples 
