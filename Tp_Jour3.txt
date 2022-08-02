@@ -1,0 +1,23 @@
+1. let a = 10
+	let b = 20
+	let c = 30
+
+	Determiner le maximum de entre ces trois variables
+
+2. Explication 
+	Executer ce code et cherchez le pourquoi:
+
+		let b = true;
+		let result = b && (1 / 0);
+		console.log(result);
+
+		let b = false;
+		let result = b && (1 / 0);
+		console.log(result);
+
+3. Resoudre l'equation du second degre du type ax**2+bx+c=0
+	a = 10
+	b = 8
+	c 1
+
+4. Introduction aux boucles : Ecrire "Hello Hogi" 50 fois
