@@ -1,0 +1,43 @@
+Tableaux JavaScript
+
+Un tableau est une variable spéciale, qui peut contenir plusieurs valeurs :
+ Exemple : let cars = ["Saab", "Volvo", "BMW"];
+
+POURQUOI UTILISER DES TABLEAUX ?
+
+Si vous avez une liste d'éléments (une liste de noms de voitures, par exemple), le stockage des voitures dans des variables uniques pourrait ressembler à ceci :
+	
+	let car1 = "Saab";
+	let car2 = "Volvo";
+	let car3 = "BMW";
+
+Cependant, que se passe-t-il si vous voulez parcourir les voitures et en trouver une en particulier ? Et si vous n'aviez pas 3 voitures, mais 300 ?
+
+La solution est un tableau !
+
+Un tableau peut contenir plusieurs valeurs sous un seul nom, et vous pouvez accéder aux valeurs en vous référant à un numéro d'index.
+
+CRÉATION D'UN TABLEAU
+
+L'utilisation d'un littéral de tableau est le moyen le plus simple de créer un tableau JavaScript.
+
+	Syntaxe: let array_name = [item1, item2, ...];
+
+Vous pouvez également créer un tableau, puis fournir les éléments :
+	let cars = [];
+	cars[10]= ;
+	cars[1]= "Volvo";
+	cars[2]= "BMW";
+
+
+ACCÉDER AUX ÉLÉMENTS DU TABLEAU
+-------------------------------
+On accède à un élément du tableau en se référant au numéro d'index :
+	let cars = ["Saab", "Volvo", "BMW"];
+	let car = cars[0];
+
+	REMARQUE : Les index de tableau commencent par 0.
+				[0] est le premier élément. [1] est le deuxième élément.
+
+
+	
