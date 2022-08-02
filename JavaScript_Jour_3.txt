@@ -1,0 +1,188 @@
+Résumé :  vous apprendrez à utiliser l’instruction JavaScript if pour exécuter un bloc lorsqu’une condition est vraie.
+
+Introduction à l’instruction JavaScript if
+
+L’instruction if exécute le bloc si une condition est vraie
+	
+	syntaxe : if( condition )
+   				instruction;
+
+La condition peut être une valeur ou une expression. En règle générale, la condition s’évalue à une valeur booléenne, qui est true ou false.
+
+Si la condition a la valeur true, l’instruction if exécute l’instruction. Sinon, l’instruction if transmet le contrôle à l’instruction suivante.
+
+
+Si la condition est évaluée à une valeur non booléenne, JavaScript convertit implicitement son résultat en valeur booléenne en appelant la fonction Boolean().
+
+Si vous avez plusieurs instructions à exécuter, vous devez les envelopper dans un bloc à l’aide d’une paire d’accolades comme suit :
+
+	syntaxe : if (condition) {
+	  // block d'instruction
+	}
+
+Cependant, c’est une bonne pratique de toujours utiliser des accolades avec l’instruction if. En faisant cela, vous rendez votre code plus facile à maintenir et évitez d’éventuelles erreurs.
+
+
+	Exemple : 
+		let age = 18;
+		if (age >= 18) {
+		  console.log('Vous pouvez entrer');
+		}
+
+
+Introduction au JavaScript if... else
+
+L’instruction if exécute un bloc si une condition est vraie. Lorsque la condition est fausse, elle ne fait rien. Mais si vous souhaitez exécuter une instruction si la condition est fausse, vous pouvez utiliser une instruction if... else.
+
+	Syntaxe : 
+		if( condition ) {
+		  // ...
+		} else { 
+		  // ...
+		}
+
+Dans cette syntaxe, la condition est une valeur ou une expression qui s’évalue à true ou false. Si la condition est vraie, le si... L’instruction else exécute le bloc qui suit la branche if.
+
+Si la condition est fausse, le si... L’instruction else exécute le bloc qui suit la branche else.
+
+En règle générale, la condition est évaluée à une valeur booléenne, qui est true ou false. Toutefois, s’il s’évalue à une valeur non booléenne, le si... else le convertit en valeur booléenne.
+
+
+	Exemple : 
+		let age = 18;
+		if (age >= 18) {
+		  console.log('You can sign up.');
+		} else {
+		  console.log('You must be at least 18 to sign up.');
+		}
+
+	Exercice : Verifier si un nombre est pair ou pas
+
+
+
+OPERATEURS LOGIQUES
+
+1 L’OPÉRATEUR LOGIQUE NOT (!)
+
+ JavaScript utilise un point d’exclamation ! pour représenter l’opérateur logique NOT. Le! peut être appliqué à une seule valeur de n’importe quel type, et pas seulement à une valeur booléenne.
+
+Lorsque vous appliquez le ! opérateur à une valeur booléenne, le ! renvoie true si la valeur est false et renvoie false si la valeur est true
+
+	Exemple : let eligible = false,
+				    required = true;
+
+				console.log(!eligible);
+				console.log(!required);
+
+La logique ! l’opérateur travaille selon les règles suivantes:
+
+	Si a n’est pas défini, le résultat est vrai.
+	Si a est null, le résultat est vrai.
+	Si a est un nombre autre que 0, le résultat est false.
+	Si a est NaN, le résultat est vrai.
+	Si a est null, le résultat est vrai.
+	Si a est un objet, le résultat est false.
+	Si a est une chaîne vide, le résultat est true. Dans le cas où a est une chaîne non vide, le résultat est false
+
+
+	Exemple : 	console.log(!undefined); // true
+				console.log(!null); // true
+				console.log(!20); //false
+				console.log(!0); //true
+				console.log(!NaN); //true
+				console.log(!{}); // false
+				console.log(!''); //true
+				console.log(!'OK'); //false
+				console.log(!false); //true
+				console.log(!true); //false
+
+2.DOUBLE NÉGATION (!!)
+
+	Parfois, vous pouvez voir la double négation (!!) dans le code.
+	Le !! utilise l’opérateur logique NOT (!) deux fois pour convertir une valeur en sa valeur booléenne réelle.
+	Le résultat est identique à l’utilisation de la fonction Boolean().
+
+	Exemple:	let counter = 10;
+				console.log(!!counter); 
+
+
+3. L’OPÉRATEUR LOGIQUE AND (&&)
+
+	Le résultat de l’opérateur && n’est vrai que si les deux valeurs sont true, sinon, il est false
+
+	Completez ce tableau :
+
+
+					a 		b 		a&&b
+					------+--------+------
+					true  |	true   |  TRUE
+					false |	true   |  false
+					true  |	false  |  false
+					fale  |	false  |  ?
+
+	Exercice :
+
+		Executer ce code et cherchez le pourquoi:
+
+		let b = true;
+		let result = b && (1 / 0);
+		console.log(result);
+
+		let b = false;
+		let result = b && (1 / 0);
+		console.log(result);
+
+4. L’OPÉRATEUR OU LOGIQUE (||)
+
+Le || renvoie false si les deux valeurs ont la valeur false. Dans le cas où l’une ou l’autre valeur est true, la || renvoie true. 
+
+Completez ce tableau :
+
+
+					a 		b 		a||b
+					------+--------+------
+					true  |	true   |  true
+					false |	true   |  true
+					true  |	false  |  true
+					false |	false  |  false
+
+
+RÉSUMÉ
+	- L’opérateur NOT (!) annule une valeur booléenne.
+	- Le (!!) convertit une valeur en sa valeur booléenne réelle.
+	- L’opérateur AND (&&) est appliqué à deux valeurs booléennes et renvoie true si les deux valeurs sont true.
+	- L’opérateur OR (||) est appliqué à deux valeurs booléennes et renvoie true si l’un des opérandes a la valeur true.
+	- La priorité de l’opérateur logique du plus élevé au plus bas est !, && et ||.
+
+
+Excercice : 
+	let a = 10
+	let b = 20
+
+	Determiner le maximum de entre ces deux variables
+
+1. let a = 10
+	let b = 20
+	let c = 30
+
+	Determiner le maximum de entre ces trois variables
+
+2. Explication 
+	Executer ce code et cherchez le pourquoi:
+
+		let b = true;
+		let result = b && (1 / 0);
+		console.log(result);
+
+		let b = false;
+		let result = b && (1 / 0);
+		console.log(result);
+
+3. Resoudre l'equation du second degre du type ax**2+bx+c=0
+	a = 10
+	b = 8
+	c 1
+
+4. Introduction aux boucles : Ecrire "Hello Hogi" 50 fois
+
+
