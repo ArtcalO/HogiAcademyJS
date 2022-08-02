@@ -1,0 +1,62 @@
+Les boucles
+
+La boucle dans les langages de programmation est une fonctionnalité qui facilite l’exécution d’un ensemble d’instructions / fonctions à plusieurs reprises pendant que certaines conditions sont évaluées à true. Par exemple, supposons que nous voulions imprimer «Hello World» 10 fois. Cela peut être fait de deux manières, comme indiqué ci-dessous:
+
+	<script type = "text/javascript">
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	document.write("Hello World\n");
+	</script>
+
+	ou
+
+	<script type = "text/javascript">
+	var i;
+
+	for (i = 0; i < 10; i++)
+	{
+		document.write("Hello World!\n");
+	}
+	</script>
+
+Il existe principalement deux types de boucles :
+
+BOUCLES CONTRÔLÉES D’ENTRÉE: 
+	Dans ces types de boucles, la condition de test est testée avant d’entrer dans le corps de la boucle. Les boucles for et les boucles while sont des boucles contrôlées par entrée.
+BOUCLES CONTRÔLÉES DE SORTIE:
+	Dans ces types de boucles, la condition de test est testée ou évaluée à la fin du corps de la boucle. Par conséquent, le corps de la boucle s’exécutera au moins une fois, que la condition de test soit vraie ou fausse. La boucle do-while est une boucle contrôlée de sortie.
+
+
+JavaScript fournit principalement trois façons d’exécuter les boucles. Bien que tous les moyens fournissent des fonctionnalités de base similaires, ils diffèrent par leur syntaxe et leur temps de vérification de l’état. Laissez-nous en apprendre davantage sur chacun d’entre eux en détail.
+
+1. BOUCLE WHILE : une boucle while est une instruction de flux de contrôle qui permet d’exécuter du code à plusieurs reprises en fonction d’une condition booléenne donnée.
+
+La boucle while peut être considérée comme une instruction if répétitive
+	Syntaxe:
+		while (boolean condition)
+		{
+		   instructions...
+		}
+
+2. BOUCLE FOR: une boucle for fournit une façon concise d’écrire la structure de la boucle. Contrairement à une boucle while, une instruction for consomme l’initialisation, la condition et l’incrémentation/décrémentation en une seule ligne, fournissant ainsi une structure de boucle plus courte et facile à déboguer.
+	
+	Syntaxe:
+		for (condition d’initialisation; condition de test; incrémentation/décrémentation)
+		{
+		    instructions...
+		}
+		
+3.LA BOUCLE DO-WHILE : la boucle do-while est similaire à la boucle while avec la seule différence qu’elle vérifie la condition après l’exécution des instructions, eT EST DONC UN EXEMPLE DE BOUCLE DE CONTRÔLE DE SORTIE.
+	Syntaxe:
+		do
+		{
+		    instructions..
+		}
+		while (condition);
