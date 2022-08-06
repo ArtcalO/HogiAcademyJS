@@ -69,13 +69,15 @@
     function ajouter(){
         const child = document.createElement("div")
         const umwibutsa = document.getElementById("input-value")
-        console.log(umwibutsa)
-        child.innerHTML=umwibutsa.value
-        child.setAttribute("class","umwibutsa")
-        const parent = document.getElementById("conteneur")
-        addBoutons(child)
-        parent.appendChild(child);
-        
+        if(umwibutsa.value.trim()=="" || umwibutsa.value.trim().length<10)
+            alert("Proverbe invalide !")
+        else{
+            child.innerHTML=umwibutsa.value
+            child.setAttribute("class","umwibutsa")
+            const parent = document.getElementById("conteneur")
+            addBoutons(child)
+            parent.appendChild(child);
+        }
     }
 </script>
 </html>
