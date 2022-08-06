@@ -1,0 +1,2 @@
+Avec les fichier se trouvant dans le dossier quotes
+Faites a ce que quand vous ajoutez un proverbe , vous puissiez le supprimer ou le modifier en cliquant  sur les boutons "Supprimer" ou "Modifer"
