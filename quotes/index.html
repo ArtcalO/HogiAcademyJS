@@ -11,11 +11,11 @@
     <div class="main-container">
         <h3>Proverbes avec JavaScript</h3>
         <div class="progress-bar" ></div>
-        <div class="form-container" >
+        <div class="form-container" id="form-container">
             <p>Ecris le proverbe ici!</p>
             <textarea name="" id="input-value" cols="30" rows="10"></textarea>
             <br>
-            <button class="ajouter" onclick="ajouter()">Ajouter</button>
+            <button class="ajouter" id="ajouter" onclick="ajouter()">Ajouter</button>
         </div>
         <div id="conteneur" >
 
@@ -48,7 +48,11 @@
 
         btnModifiy.addEventListener("click",()=>{
             let input = document.getElementById("input-value")
+            document.getElementById("ajouter").style.display="none"
             input.value = umwibutsa.textContent.replace("SupprimerModifier", "")
+            let parent2 = document.getElementById("form-container")
+            let btnModify2 = creerBoutonElement("Modifier", "modifier")
+            parent2.appendChild(btnModify2)
         },false)
 
 
@@ -86,5 +90,6 @@
             parent.appendChild(child);
         }
     }
+
 </script>
 </html>
